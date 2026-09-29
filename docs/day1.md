@@ -1,0 +1,12 @@
+# Day 1
+- 装好了 WSL2 Ubuntu
+- 学会看提示符：user@host:~$
+- 理解 / 是根目录，~ 是家目录
+- 理解 . 是当前目录，.. 是上一级
+- 学会命令：pwd, ls, ls -la, cd, mkdir, touch, cat
+- 学会用 nano 新建并编辑文件
+- 写了第一个 C 程序 hello.c
+- 学会编译：gcc hello.c -o hello
+- 学会运行：./hello
+- 输出：hello, system
+- 明天：文件操作、权限、grep、管道
