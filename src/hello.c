@@ -1,7 +1,6 @@
 #include <stdio.h>
 
 int main() {
-    printf("hello from robot\n");
+    printf("hello, system\n");
     return 0;
 }
-
