@@ -1,6 +1,1 @@
-# robot from GitHub
-creating a conflict now!
-
-# robot
-hello from Github
-Let me try a pull request
+你好，这是我通过 API 修改的 README！
