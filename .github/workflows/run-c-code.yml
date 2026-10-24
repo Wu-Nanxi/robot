@@ -1,28 +1,18 @@
 name: Compile and Run C Code
 
 on:
-  workflow_dispatch: # 允许你手动/用API触发
+  workflow_dispatch:
 
 jobs:
   build-and-run:
     runs-on: ubuntu-latest
 
     steps:
-      # 1. 把仓库代码拉取到云端服务器
       - name: Checkout Code
         uses: actions/checkout@v4
 
-      # 2. 进入 src 文件夹，看看里面有什么（测试用）
-      - name: List files in src
+      - name: Compile and Run
         run: |
           cd src
-          ls -la
-
-      # 3. 编译并运行你要跑的具体文件
-      # 【注意】这里我用 ascii.c 举例，你可以把它换成你想跑的任何一个文件！
-      - name: Compile and Run ascii.c
-        run: |
-          cd src
-          gcc ascii.c -o my_program  # 把 ascii.c 编译成一个叫 my_program 的程序
-          ./my_program                # 运行这个程序
-add c workflow
+          gcc ascii.c -o my_program
+          ./my_program
