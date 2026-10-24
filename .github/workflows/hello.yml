@@ -1,0 +1,9 @@
+name: Hello API
+on:
+  workflow_dispatch:
+
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "GitHub 服务器被 API 唤醒了！"
